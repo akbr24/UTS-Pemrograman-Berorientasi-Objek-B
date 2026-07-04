@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@android:drawable/ic_menu_send"
+        android:contentDescription="Logo aplikasi donasi"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvJudulLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistem Donasi Mahasiswa"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0B4F8A"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvSubJudulLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silakan masuk untuk melanjutkan"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/edtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama pengguna"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="12dp" />
+
+    <RadioGroup
+        android:id="@+id/rgPeran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rbDonatur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donatur"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbPembuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembuat Kampanye" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="LOGIN"
+        android:textSize="16sp" />
+
+</LinearLayout>
